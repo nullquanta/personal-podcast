@@ -5,6 +5,7 @@ const { create } = require('xmlbuilder2');
 const BASE_URL = 'https://nullquanta.github.io/personal-podcast'; 
 const MP3_DIR = './episodes'; // Folder where your mp3s are stored
 const FEED_FILE = './rss.xml';
+const COVER_IMAGE_URL = `${BASE_URL}/cover.png`;
 
 const feedInfo = {
   title: 'NullQuanta Podcast',
@@ -23,8 +24,8 @@ function getMP3Files(dir) {
       const filePath = path.join(dir, file);
       const stats = fs.statSync(filePath);
       return {
-        title: path.basename(file, '.mp3'),
-        url: `${BASE_URL}/${path.basename(MP3_DIR)}/${file}`,
+        title: path.basename(file, '.mp3').replace(/_/g, ' '),
+        url: `${BASE_URL}/${path.basename(dir)}/${file}`,
         size: stats.size,
         pubDate: stats.mtime.toUTCString(),
         guid: path.basename(file),
@@ -43,8 +44,8 @@ function buildRSS(feedItems) {
     .ele('language').txt(feedInfo.language).up()
     .ele('itunes:author').txt(feedInfo.author).up()
     .ele('itunes:explicit').txt('false').up()
-    .ele('itunes:image').txt(feedInfo.cover).up()
-    .ele('itunes:category', { text: feedInfo.category }).up();
+    .ele('itunes:category', { text: feedInfo.category }).up()
+    .ele('itunes:image', { href: COVER_IMAGE_URL }).up();
 
   for (const item of feedItems) {
     root.ele('item')

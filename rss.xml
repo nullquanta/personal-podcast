@@ -7,21 +7,21 @@
     <language>en-us</language>
     <itunes:author>NullQuanta</itunes:author>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image>https://nullquanta.github.io/personal-podcast/cover.png</itunes:image>
     <itunes:category text="Personal"/>
+    <itunes:image href="https://nullquanta.github.io/personal-podcast/cover.png"/>
     <item>
-      <title>Scaling_CSS__Architectures_and_Modern_Approaches</title>
+      <title>Scaling CSS  Architectures and Modern Approaches</title>
       <enclosure url="https://nullquanta.github.io/personal-podcast/episodes/Scaling_CSS__Architectures_and_Modern_Approaches.mp3" length="8805932" type="audio/mpeg"/>
       <guid>Scaling_CSS__Architectures_and_Modern_Approaches.mp3</guid>
-      <pubDate>Sat, 10 May 2025 11:32:57 GMT</pubDate>
-      <description>Episode: Scaling_CSS__Architectures_and_Modern_Approaches</description>
+      <pubDate>Sat, 10 May 2025 11:37:04 GMT</pubDate>
+      <description>Episode: Scaling CSS  Architectures and Modern Approaches</description>
     </item>
     <item>
-      <title>Understanding_useEffect_and_useLayoutEffect</title>
+      <title>Understanding useEffect and useLayoutEffect</title>
       <enclosure url="https://nullquanta.github.io/personal-podcast/episodes/Understanding_useEffect_and_useLayoutEffect.mp3" length="11797172" type="audio/mpeg"/>
       <guid>Understanding_useEffect_and_useLayoutEffect.mp3</guid>
-      <pubDate>Sat, 10 May 2025 11:33:02 GMT</pubDate>
-      <description>Episode: Understanding_useEffect_and_useLayoutEffect</description>
+      <pubDate>Sat, 10 May 2025 11:37:09 GMT</pubDate>
+      <description>Episode: Understanding useEffect and useLayoutEffect</description>
     </item>
   </channel>
 </rss>
