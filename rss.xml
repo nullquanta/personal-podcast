@@ -8,6 +8,7 @@
     <itunes:author>NullQuanta</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Personal"/>
+    <itunes:image href="https://nullquanta.github.io/personal-podcast/cover.png" />
     <item>
       <title>Scaling_CSS_Architectures_and_Modern_Approaches</title>
       <enclosure url="https://nullquanta.github.io/personal-podcast/episodes/Scaling_CSS_Architectures_and_Modern_Approaches.mp3" length="8805932" type="audio/mpeg"/>
