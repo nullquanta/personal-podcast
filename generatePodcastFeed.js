@@ -13,6 +13,7 @@ const feedInfo = {
   language: 'en-us',
   author: 'NullQuanta',
   category: 'Personal',
+  cover: `${BASE_URL}/cover.png`,
 };
 
 function getMP3Files(dir) {
@@ -42,6 +43,7 @@ function buildRSS(feedItems) {
     .ele('language').txt(feedInfo.language).up()
     .ele('itunes:author').txt(feedInfo.author).up()
     .ele('itunes:explicit').txt('false').up()
+    .ele('itunes:image').txt(feedInfo.cover).up()
     .ele('itunes:category', { text: feedInfo.category }).up();
 
   for (const item of feedItems) {
